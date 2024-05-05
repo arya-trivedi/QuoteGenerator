@@ -1,0 +1,206 @@
+/*
+    Author : Arya Trivedi
+    Date : 05/01/2024
+    Program : Random Quotes Generator
+*/
+
+quotes = [
+    'As you start to walk on the way, the way appears. - Rumi',
+    'The unexamined life is not worth living. - Socrates',
+    'Never apologize for the changes you made in order to heal.  - Anonymous',
+    'Chains of habit are too light to be felt until they are too heavy to be broken. - Warren Buffett',
+    'There is nothing either good or bad, but thinking makes it so. - William Shakespeare',
+    'Forget those who forget you. - Anonymous',
+    'The soul is healed by being with children. - Fyodor Dostoevsky',
+    'Life is short, time is fast, no replay, no rewind, so enjoy every moment as it comes. - Anonymous',
+    'Give, even if you only have a little. - Buddha',
+    'The reward for our work is not what we get, but what we become. - Paulo Coelho',
+    'Knowing yourself is the beginning of all wisdom. - Aristotle',
+    'Anyone who loves in the expectation of being loved in return is wasting their time. - Paulo Coelho',
+    'Do not limit your challenges. Challenge your limits. - Anonymous',
+    'It does not matter how slowly you go so long as you do not stop. - Confucius',
+    'When you are good to others, you are best to yourself. - Benjamin Franklin',
+    'A man who has committed a mistake and does not correct it is committing another mistake. - Confucius',
+    'You can stand tall without standing on someone. You can be a victor without having victims. - Harriet Woods',
+    'Love the life you live. Live the life you love. - Bob Marley',
+    'Intelligence is the ability to adapt to change. - Stephen Hawking',
+    'Do not count the days, make the days count. - Muhammad Ali',
+    'Change is never painful, only the resistance to change is painful. - Buddha',
+    'No one is too busy, it is only a matter of priorities. - Anonymous',
+    'Peace is who you are, stress is who you are trying to be. - Anonymous',
+    'Straight roads do not make skillful drivers. - Paulo Coelho',
+    'If you are never alone, you cannot know yourself. - Paulo Coelho',
+    'Life is a balance between holding on and letting go. - Rumi',
+    'There is only one way to happiness and that is to cease worrying about things which are beyond the power or our will. - Epictetus',
+    'Time is precious. Waste it wisely.',
+    'A man is great not because he has not failed; a man is great because failure has not stopped him. - Confucius',
+    'We cannot learn without pain. - Aristotle',
+    'Above all, do not lie to yourself. ― Dostoevsky',
+    'The purpose of knowledge is action, not knowledge. ― Aristotle',
+    'Tell me, and I forget, teach me, and I may remember, involve me, and I learn. ― Benjamin Franklin',
+    'As you start to walk on the way, the way appears. - Rumi',
+    'Educating the mind without educating the heart is no education at all. - Aristotle',
+    'Choice, not chance, determines your destiny. - Aristotle',
+    'When you love someone, you love the person as they are, and not as you would like them to be. - Leo Tolstoy',
+    'Intelligence is the ability to adapt to change. - Stephen Hawking',
+    'Chains of habit are too light to be felt until they are too heavy to be broken. - Warren Buffett',
+    'If you look for perfection, you will never be content. - Leo Tolstoy',
+    'Sometimes even to live is an act of courage. - Seneca',
+    'You will never reach your destination if you stop & throw stones at every Dog that barks.... better keep biscuits and move on. - Dhirubhai Ambani.',
+    'Do not mix words with your bad mood. Your mood may change after a while but you will never get the opportunity to replace the words you spoke.',
+    'Stay away from negative people, they have a problem for every solution. - Albert Einstein',
+    'It does not matter how slowly you go so long as you do not stop. - Confucius',
+    'Do not limit your challenges. Challenge your limits.',
+    'The most important decision you make is to be in a good mood. - Voltaire',
+    'A man who wants to lead the orchestra must turn his back on the crowd. - Max Lucado',
+    'You only have to do a very few things right in your life so long as you do not do too many things wrong. - Warren Buffett',
+    'If you are never alone, you cannot know yourself. - Paulo Coelho',
+    'All truth passes through three stages. First, it is ridiculed. Second, it is violently opposed. Third, it is accepted as being self-evident. - Arthur Schopenhauer',
+    'Develop success from failures. Discouragement and failure are two of the surest stepping stones to success. —Dale Carnegie',
+    'Enjoy every step you take. If you are curious, there is always something new to be discovered in the backdrop of your daily life.',
+    'Rivers know this: there is no hurry. We shall get there someday. - A.A. Milne',
+    'The root of suffering is attachment - Buddha',
+    'Life is like riding a bicycle. To keep your balance, you must keep moving.- Albert Einstein',
+    'Those who know do not speak. Those who speak do not know. - Lao Tsu',
+    'The best fighter is never angry. - Lao Tzu',
+    'Wealth is the number of things one can do without. - Dostoevsky',
+    'Success comes from curiosity, concentration, perseverance, and self-criticism. - Albert Einstein',
+    'If it costs you your peace it is too expensive. - Paulo Coelho',
+    'What we think, we become. – Buddha',
+    'I can accept failure, everyone fails at something. But I cannot accept not trying. - Michael Jordan',
+    'The greatest happiness is to know the source of unhappiness. - Fyodor Dostoevsky',
+    'It is your road, and yours alone, others may walk it with you, but no one can walk it for you. - Rumi',
+    'Be brave. Take risks. Nothing can substitute experience. - Paulo Coelho',
+    'The further a society drifts from truth the more it will hate those who speak it. -Selwyn Duke',
+    'Do not use your energy to worry. Use your energy to believe, to create, to learn, to think and to grow.',
+    'I can accept failure, everyone fails at something. But I cannot accept not trying. - Michael Jordan',
+    'I am not upset that you lied to me, I am upset that from now on I cannot believe you. - Friedrich Nietzsche',
+    'Silence is the best answer to a fool.',
+    'A boat may stay in water, but water should not stay in boat. A spiritual aspirant may live in the world, but the world should not live within him. ~ Ramakrishna',
+    'As you start to walk on the way, the way appears. - Rumi',
+    'The trust of the innocent is the liars most useful tool. - Stephen King',
+    'Educating the mind without educating the heart is no education at all. - Aristotle',
+    'Until we can manage time, we can manage nothing else. - Peter F. Drucker',
+    'Love the life you live. Live the life you love. - Bob Marley',
+    'What is right is not always popular and what is popular is not always right. - Albert Einstein',
+    'What hurts you, blesses you. Darkness is your candle. - Rumi',
+    'The greatest happiness is to know the source of unhappiness. - Fyodor Dostoevsky',
+    'If you are not failing every now and again, it is a sign you are not doing anything very innovative. - Woody Allen',
+    'Success comes from curiosity, concentration, perseverance, and self-criticism. - Albert Einstein',
+    'Take risks in your life. If you win, you can lead, if you lose, you can guide. ~ Swami Vivekananda.',
+    'Educating the mind without educating the heart is no education at all. - Aristotle',
+    'Rivers know this: there is no hurry. We shall get there someday. - A.A. Milne',
+    'The mind is everything. What you think, you become."   - Buddha',
+    'Obstacles cannot stop you. Problems cannot stop you. Most of all others cannot stop you. The only one who stops you is yourself.',
+    'Never take advantage of good people.',
+    'First it hurts, then it changes you.',
+    'Be good to people for no reason.',
+    'Do it because nobody believed in you.',
+    'Disappear when you feel unwanted.',
+    'Do not react. Stay in control.',
+    'Fear is temporary. Regret is forever.',
+    'You are what you do, not what you say you will do.',
+    'Risk is better than regret.',
+    'Trust your intuition. It never lies.',
+    'Be obsessed with improving yourself.',
+    'Being alone is peaceful.',
+    'The calmer you are, the clearer you think.',
+    'Small circle. Peaceful life.',
+    'Never apologize for being you.',
+    'Do not overshare. Everyone is not your friend.',
+    'To succeed, stay humble.',
+    'Intelligence is the ability to adapt to change.',
+    'Do not chase. Attract.',
+    'Stay strong, be positive. We all struggle sometimes.',
+    'You learn a lot by being silent.',
+    'Never gossip. Focus on success.',
+    'Never accept disrespect.',
+    'Stay away from people that ruin your peace.',
+    'Being too nice breaks you.',
+    'Silence is better than drama.',
+    'Stay patient and trust your journey.',
+    'Be disciplined. There is no easy way.',
+    'Never revenge. Cut them out silently.',
+    'Be real. Be kind. Be humble.',
+    'Do not complain. Just rebuild your life.',
+    'Do not react. Cut them off silently.',
+    'Life is better when you are laughing.',
+    'If you cannot explain something in simple terms, you do not understand it.',
+    'Change is the only constant.',
+    'Sometimes you win, sometimes you learn.',
+    'Never beg to be loved.',
+    'Do not let fear ruin your life.',
+    'Do npt complain. Just rebuild your life.',
+    'Stay away from people that ruin your peace.',
+    'Being alone is peaceful.',
+    'Never apologize for being you.',
+    'Risk is better than regret.',
+    'Never laugh at people trying to do better.',
+    'Do not argue with a fool. Be mature. Stay silent.',
+    'Be private. Vibe alone. Grow in silence.',
+    'Be addicted to learning.',
+    'Being alone is peaceful.',
+    'Be mentally attractive.',
+    'A fake friend is worse than an enemy.',
+    'Be mentally attractive.',
+    'A fake friend is worse than an enemy.',
+    'Never accept disrespect.',
+    'Silence is better than drama.',
+    'Disappear when you feel unwanted.',
+    'Be patient. Your time will come.',
+    'Do it alone. Time does not wait.',
+    'Do not react. Stay in control.',
+    'Do not complain. Just rebuild your life.',
+    'Keep it private. Avoid jealousy.',
+    'Do not let fear ruin your life.',
+    'Never laugh at people trying to do better.',
+    'Never revenge. Cut them out silently.',
+    'Trust your process. Patience is power.',
+    'Before you react, think.',
+    'A fake friend is worse than an enemy.',
+    'Forgive your old self, you have changed.',
+    'Be alone until you’re valued.',
+    'Mistakes are proof that you are trying.',
+    'Be private. Vibe alone. Grow in silence.',
+    'Do not argue with a fool. Be mature. Stay silent.',
+    'Accept. Forgive. Move on.',
+    'Trust your process. Patience is power.',
+    'Do not overshare. Everyone is not your friend.',
+    'Speak less. You will see more.',
+    'Control your emotions. Learn to react less.',
+    'Disappear. Improve. Return. Shock everyone.',
+    'Do not argue with a fool. Be mature. Stay silent.',
+    'Friends are medicine for a wounded heart, and vitamins for a hopeful soul.',
+] // end of quotes
+
+// we will set as elements aree non repetitive
+// also the Set is usually faster data structure
+// "new" will create a new object
+const usedIndexes = new Set()
+const quoteElement = document.getElementById("quote")
+
+function generateQuote() {
+
+    while(true){
+    // if all quotes are already seen, reset
+    if(quotes.length === usedIndexes.size){
+        usedIndexes.clear(); // clear the set
+    }
+
+    // Math.random will give a num between 0 and 1
+    // quotes length will give quotes array length
+    // Math.floor will give us number which is rounded to lower value
+    // so if number was 4.75, the floor will return 4 not 5
+
+    const randomIdx = Math.floor(Math.random() * quotes.length);
+
+    // if the set already has above generated number, continue
+    // that is, go back to while and generate another number
+    if(usedIndexes.has(randomIdx)) continue
+    else usedIndexes.add(randomIdx) // otherwise add random num to set
+
+    quoteElement.innerHTML = quotes[randomIdx]
+    break // to get us out of while loop
+    }
+}
+
